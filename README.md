@@ -4,6 +4,13 @@ declutter-note-9 is a bash script I wrote to remove apps that I didn't want on m
 
 **Note**: My device model is SM-N960-F running the official carrier-unlocked ROM, therefore the apps that are listed to be removed my vary on other device configurations.
 
+## Requirements
+
+1. `adb` package is installed
+2. USB Debugging  is enabled on your Note 9
+
+**Note**: Follow the steps in ['Install `adb` and enable USB Debugging'](#install-adb-and-enable-usb-debugging) to install / enable
+
 ## Usage
 
 1. Ensure `adb.sh` is has permission to execute:

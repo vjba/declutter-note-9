@@ -1,31 +1,53 @@
 # Declutter Samsung Galaxy Note 9
 
-declutter-note-9 is a bash script I wrote to remove apps that I didn't want on my device (namely the annoying Bixby assistant launch on accidental Bixby button presses along with general bloatware)
+declutter-note-9 is a bash script I wrote to remove these apps that I didn't want on my device:
 
-**Note**: My device model is SM-N960-F running the official carrier-unlocked ROM, therefore the apps that are listed to be removed my vary on other device configurations.
+* Bixby
+* Microsft apps
+* Google apps (most of them)
+* Facebook apps
+* Edge widgets
+
+**Note**: My device model is SM-N960-F running the Samsung carrier-unlocked ROM, therefore the apps that are listed to be removed may vary on other device configurations. If they do fail on removal, the script continues.
 
 ## Usage
 
-1. Ensure `adb.sh` is has permission to execute:
+1. Get the script with git:
+
+    ```bash
+    git clone https://github.com/vjba/declutter-note-9.git
+    ```
+
+    Or download it [here](https://github.com/vjba/declutter-note-9/blob/master/adb.sh)
+
+2. Ensure `adb.sh` is has permission to execute:
 
    ```bash
    chmod 755 adb.sh
    ```
 
-2. Run the script:
+3. Run the script:
 
    ```bash
    ./adb.sh
    ```
 
    The terminal should output a series of `Success` statements when `adb` successfully uninstalls the application, and `Failure: reason` on unsuccessful uninstalls.
-3. Enjoy a Note 9 without the bloatware!
+4. Enjoy a Note 9 without the bloatware!
+
+## Customizing the script
+
+If you would like to add other apps to the uninstallation process, review the apps installed on your device:
+
+```bash
+adb shell pm list packages --user 0
+```
 
 ## Install `adb` and enable USB Debugging
 
 1. Install `adb` ([Android Device Bridge](https://developer.android.com/studio/command-line/adb))
 
-   **Note for Debian and Ubuntu users**: The `adb` package is already available from their respective offical repositories. Just run:
+   **Note for Debian and Ubuntu users**: The `adb` package is already available from their respective offical repositories:
 
     ```bash
     apt install adb -y

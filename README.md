@@ -47,7 +47,13 @@ declutter-note-9 is a bash script I wrote to remove these apps that I didn't wan
 If you would like to add other apps to the uninstallation process, review the apps installed on your device:
 
 ```bash
-adb shell pm list packages --user 0
+adb shell pm list packages --user 0 | sort
+```
+
+Or search for a specific package:
+
+```bash
+adb shell pm list packages --user 0 | grep example-package | sort
 ```
 
 ## Install `adb` and enable USB Debugging

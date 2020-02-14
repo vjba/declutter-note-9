@@ -48,6 +48,7 @@ packages=(
     com.sec.android.cover.ledcover
     com.sec.android.mimage.gear360editor
 )
+
 for package in "${packages[@]}"; do
     echo "Uninstalling ${package}:"
     adb shell pm uninstall --user 0 "${package}"

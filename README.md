@@ -8,7 +8,7 @@ declutter-note-9 is a bash script I wrote to remove these apps that I didn't wan
 * Facebook apps
 * Edge widgets
 
-**Note**: My device model is SM-N960-F build: `QP1A.190711.020.N960FXXS4DTA5` running the Samsung carrier-unlocked ROM, therefore the apps that are listed to be removed may vary on other device configurations. If they do fail on removal, the script continues.
+**Note**: My device model is SM-N960-F build: `QP1A.190711.020.N960FXXU5DTD3` running the Samsung carrier-unlocked ROM, therefore the apps that are listed to be removed may vary on other device configurations. If they do fail on removal, the script continues.
 
 ## Requirements
 

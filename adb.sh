@@ -47,6 +47,8 @@ packages=(
     com.samsung.systemui.bixby2
     com.sec.android.cover.ledcover
     com.sec.android.mimage.gear360editor
+    com.google.android.apps.tachyon
+    com.microsoft.appmanager
 )
 
 for package in "${packages[@]}"; do

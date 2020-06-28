@@ -9,6 +9,7 @@ packages=(
     com.google.android.feedback
     com.google.android.googlequicksearchbox
     com.google.android.printservice.recommendation
+    com.google.android.projection.gearhead
     com.google.android.setupwizard
     com.google.android.tts
     com.google.android.youtube
@@ -27,6 +28,7 @@ packages=(
     com.samsung.android.app.settings.bixby
     com.samsung.android.app.talkback
     com.samsung.android.app.taskedge
+    com.samsung.android.app.tips
     com.samsung.android.bbc.bbcagent
     com.samsung.android.bixby.agent
     com.samsung.android.bixby.agent.dummy

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 packages=(
     com.android.dreams.basic

@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if ! command adb -v >/dev/null 2>&1; then
+    echo "ERROR: Package adb not found. Exiting."
+    exit 1
+fi
+
 packages=(
     com.android.dreams.basic
     com.android.hotwordenrollment.okgoogle
@@ -59,3 +64,4 @@ for package in "${packages[@]}"; do
 done
 
 echo 'Done!'
+exit 0
